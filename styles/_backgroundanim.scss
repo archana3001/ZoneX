@@ -1,0 +1,34 @@
+.bganim {
+    height: 100vh;
+    width: 100vw;
+	// -webkit-animation: color-change-3x 5s ease-in-out infinite alternate both;
+	//         animation: color-change-3x 5s ease-in-out infinite alternate both;
+  background-image: url("../public/background/space3/space3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+@-webkit-keyframes color-change-3x {
+    0% {
+      background: #19dcea;
+    }
+    50% {
+      background: #2cff61;
+    }
+    100% {
+      background: #9dea22;
+    }
+  }
+  @keyframes color-change-3x {
+    0% {
+      background: #19dcea;
+    }
+    50% {
+      background: #2cff61;
+    }
+    100% {
+      background: #9dea22;
+    }
+  }
+  

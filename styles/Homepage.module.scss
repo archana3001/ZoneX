@@ -1,0 +1,131 @@
+// .float {
+//   animation-name: floating;
+//   animation-duration: 20s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: ease-in-out;
+// }
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px) rotateZ(20deg);
+  }
+  50% {
+    transform: translate(0, 40px) rotateZ(15deg);
+  }
+  100% {
+    transform: translate(0, -0px) rotateZ(20deg);
+  }
+}
+
+// .float1 {
+//   animation-name: floating1;
+//   animation-duration: 18s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: ease-in-out;
+// }
+
+@keyframes floating1 {
+  0% {
+    transform: translate(0, 0px) rotateZ(-20deg);
+  }
+  50% {
+    transform: translate(15px, 15px) rotateZ(-15deg);
+  }
+  100% {
+    transform: translate(0, -0px) rotateZ(-20deg);
+  }
+}
+
+// .float3 {
+//   animation-name: floating3;
+//   animation-duration: 15s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: ease-in-out;
+// }
+
+@keyframes floating3 {
+  0% {
+    transform: translate(0, 0px) rotateZ(10deg);
+  }
+  50% {
+    transform: translate(0, 30px) rotateZ(5deg);
+  }
+  100% {
+    transform: translate(0, -0px) rotateZ(10deg);
+  }
+}
+
+.dim1 {
+  animation-name: floating3;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.dim2 {
+  animation-name: floating;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.dim3 {
+  animation-name: floating;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.dim4 {
+  animation-name: floating1;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.dim5 {
+  animation-name: floating3;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+@media screen and (max-width: 500px) {
+
+  @keyframes floating3 {
+    0% {
+      transform: translate(-32%, 0px) rotateZ(10deg) scale(0.75);
+    }
+    50% {
+      transform: translate(-28%, 30px) rotateZ(5deg) scale(0.75);
+    }
+    100% {
+      transform: translate(-32%, -0px) rotateZ(10deg) scale(0.75);
+    }
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translate(-20%, 0px) rotateZ(10deg) scale(0.85);
+    }
+    50% {
+      transform: translate(-26%, 30px) rotateZ(5deg) scale(0.70);
+    }
+    100% {
+      transform: translate(-20%, -0px) rotateZ(10deg) scale(0.85);
+    }
+  }
+
+  @keyframes floating1 {
+    0% {
+      transform: translate(-5%, 0px) rotateZ(10deg) scale(0.85);
+    }
+    50% {
+      transform: translate(-0%, 30px) rotateZ(5deg) scale(0.70);
+    }
+    100% {
+      transform: translate(-5%, -0px) rotateZ(10deg) scale(0.85);
+    }
+  }
+}

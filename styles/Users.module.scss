@@ -1,0 +1,413 @@
+@import "./button.scss";
+
+@font-face {
+  src: url("../public/fonts/Exo-VariableFont_wght.ttf");
+  font-family: exo;
+}
+
+@font-face {
+  src: url("../public/fonts/Smooch-Regular.ttf");
+  font-family: smooch;
+}
+
+@font-face {
+  src: url("../public/fonts/SmoochSans-VariableFont_wght.ttf");
+  font-family: sans1;
+}
+
+@font-face {
+  src: url("../public/fonts/AmaticSC-Bold.ttf");
+  font-family: amantic;
+}
+
+.credential {
+  overflow-x: scroll;
+  position: relative;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  background-image: linear-gradient(140deg, #df9c96, #f9c449);
+}
+.credential::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  width: 50vw;
+  z-index: 12;
+  // height:50vh;
+  max-width: 600px;
+  // min-height: 80vh;
+  padding: 5vh 0;
+  background: rgba(240, 240, 240, 0.1);
+}
+
+.formContainer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+.signUpContainer {
+  /* left: 0;
+	width: 50%;
+	opacity: 1;
+	z-index: 1; */
+
+  // background-color: rgba(255,255,255,0);
+  // background-color: #F9C449;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.signUpContainer input {
+  border: none;
+  padding: 12px 8px;
+  margin: 0.8vh 0;
+  width: 30vw;
+  max-width: 300px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.signUpContainer button {
+  border-radius: 8px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  // margin: 0px 0;
+  margin-bottom: 3vh;
+}
+
+.signUpContainer button:active {
+  transform: scale(0.95);
+}
+
+.signUpContainer button:focus {
+  outline: none;
+}
+
+.list {
+  position: relative;
+  width: 30vw;
+  height: 90vh;
+  // background-color: #FF4B2B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.dash {
+  background-color: rgba(240, 20, 20, 0.1);
+  padding: 0 0 40px 0;
+  border-radius: 15px;
+  width: 50vw;
+  z-index: 10;
+  height: 40vh;
+  min-height: 220px;
+  max-width: 550px;
+}
+
+.dashcontent {
+  width: 100%;
+  background-color: rgba(240, 240, 240, 0.1);
+  padding: 5vh 4vw;
+  margin: 3vh 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dashout {
+  margin-left: 20%;
+}
+
+/* Exp */
+
+.area {
+  background: #4e54c8;
+  /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);   */
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.font1 {
+  font-family: sans1;
+  letter-spacing: 5px;
+  // font-size: 5vw;
+  font-size: min(5vw, 65px);
+  font-weight: bolder;
+  text-shadow: 2px 0 currentColor;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.font2 {
+  font-family: exo;
+  letter-spacing: 3px;
+  font-size: 200px;
+  font-weight: bolder;
+  // -webkit-text-fill-color: transparent;
+  // -webkit-text-stroke-width: 1px;
+  // -webkit-text-stroke-color: #a29;
+  // text-shadow: 2px 0 currentColor;
+}
+
+.font3 {
+  font-family: amantic;
+  letter-spacing: 3px;
+  // font-size: 100px;
+  font-weight: bolder;
+  font-size: min(5vw, 55px);
+}
+
+.circles {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgba(365, 5, 5, 1);
+  animation: animate 2.5s 0.5s infinite cubic-bezier(1, 0.015, 0.295, 1.225)
+    alternate-reverse;
+  animation-delay: 0s;
+  left: 50%;
+  // margin-top: -50vh;
+}
+
+.astro {
+  position: absolute;
+  top: 50vh;
+  left: 5vw;
+  height: 40vh;
+  // width: 9vw;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotateZ(30deg);
+  animation-name: floating;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.rocket {
+  position: absolute;
+  top: 10vh;
+  left: 50vw;
+  height: 30vh;
+  animation-name: floating1;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.planet {
+  position: absolute;
+  top: 6vh;
+  left: 15vw;
+  height: 15vh;
+  animation-name: f1;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.astro1 {
+  position: absolute;
+  top: 50vh;
+  left: 15vw;
+  height: 40vh;
+  // width: 9vw;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotateZ(30deg);
+  animation-name: floating;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.rocket1 {
+  position: absolute;
+  top: 10vh;
+  left: 80vw;
+  height: 40vh;
+  animation-name: floating1;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.planet1 {
+  position: absolute;
+  top: 6vh;
+  left: 25vw;
+  height: 15vh;
+  animation-name: f1;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes f1 {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 40px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px) scaleX(-1) rotateZ(20deg);
+  }
+  50% {
+    transform: translate(0, 40px) scaleX(-1) rotateZ(15deg);
+  }
+  100% {
+    transform: translate(0, -0px) scaleX(-1) rotateZ(20deg);
+  }
+}
+
+@keyframes floating1 {
+  0% {
+    transform: translate(0, 0px) scaleX(-1) rotateZ(-30deg);
+  }
+  50% {
+    transform: translate(0, 40px) scaleX(-1) rotateZ(-25deg);
+  }
+  100% {
+    transform: translate(0, -0px) scaleX(-1) rotateZ(-30deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    border-radius: 0 0 0 0;
+    background: rgb(150, 189, 196);
+    transform: rotate(45deg);
+  }
+  25% {
+    border-radius: 0 50% 0 0;
+    background: darksalmon;
+    transform: rotate(135deg);
+  }
+  50% {
+    border-radius: 50% 50% 0 0;
+    background: indianred;
+    transform: rotate(180deg);
+  }
+  75% {
+    border-radius: 50% 50% 50% 0;
+    background: lightcoral;
+    transform: rotate(315deg);
+  }
+  100% {
+    border-radius: 50%;
+    background: darksalmon;
+    transform: rotate(404deg);
+  }
+}
+
+/* Exp */
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 80vw;
+    padding: 5vh 0;
+    box-shadow: none;
+    max-width: 500px;
+  }
+  .list {
+    display: none;
+  }
+  .astro {
+    height: 30vh;
+  }
+  .rocket {
+    height: 20vh;
+    left: 75vw;
+    top: 30vh;
+  }
+  .planet {
+    height: 10vh;
+  }
+
+  .astro1 {
+    height: 30vh;
+    left: 1vw;
+    top: 60vh;
+  }
+  .rocket1 {
+    height: 20vh;
+    left: 75vw;
+    top: 30vh;
+  }
+  .planet1 {
+    height: 17vh;
+    left: 5vw;
+    top: 4vh;
+  }
+
+  .signUpContainer button {
+    font-size: min(4vw, 15px);
+    font-weight: bold;
+    padding: 1vh 3vw;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 1vh 0;
+  }
+
+  .signUpContainer input {
+    padding: 1.2vh 3vw;
+    padding-top: 1.4vh;
+    margin: 0.8vh 0;
+    width: 60vw;
+  }
+  .container h1 {
+    font-size: 4vh;
+  }
+
+  .dash {
+    width: 80%;
+    height: 44%;
+  }
+  .dashcontent {
+    width: 100%;
+  }
+  .dashout {
+    margin-left: 15%;
+  }
+
+  .container input::-webkit-input-placeholder {
+    font-size: min(4vw, 15px);
+  }
+
+  .container input::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: min(4vw, 15px);
+  }
+}

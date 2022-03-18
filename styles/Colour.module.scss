@@ -1,0 +1,131 @@
+$col1: #f8d90f;
+$col2: #35ddca;
+$col3: red;
+
+@import "./button.scss";
+
+.area {
+  width: 100%;
+  //   background-color: black;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(145deg, $col1, $col2);
+  background-image: url("../public/background/space5/space5.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+}
+
+#ast {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    height: 20px;
+    width: 20px;
+    box-shadow: -1px -1px 1px white, -1px 1px 1px white, 1px -1px 1px white,
+      1px 1px 1px white, 0 0 3px white, 0 0 10px white, 0 0 20px white,
+      0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 70px blue, 0 0 100px blue,
+      0 0 200px blue;
+    /* rotate: calc(90deg*0.4); */
+    background: rgba(255, 255, 255, 1);
+    animation: animate 3s linear infinite;
+    bottom: 15px;
+  }
+}
+
+#ast li:nth-child(1) {
+  left: 25%;
+  bottom: 40vh;
+  width: 30px;
+  height: 30px;
+  animation-delay: 0s;
+}
+
+#ast li:nth-child(2) {
+  left: 10%;
+  bottom: 20vh;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 3s;
+}
+
+#ast li:nth-child(3) {
+  left: 70%;
+  bottom: 40vh;
+  width: 30px;
+  height: 30px;
+  animation-delay: 2s;
+}
+
+#ast li:nth-child(4) {
+  left: 60%;
+  bottom: 30vh;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(70vh) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: rotate(720deg) scale(0.4) /* translateY(-100vh) */;
+    opacity: 0;
+    border-radius: 100%;
+  }
+}
+
+.power1 {
+  background-image: linear-gradient(
+    140deg,
+    rgba(4, 56, 91, 1) 0%,
+    rgba(211, 16, 228, 1) 81%,
+    rgba(255, 0, 124, 0.9659745065789473) 100%
+  );
+  text-decoration: none;
+  padding: 0 12px;
+  border-radius: 10px;
+  color: antiquewhite;
+  margin-top: 4%;
+  border-width: 0 ;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  max-height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+
+@media screen and (max-width: 625px) {
+  .card {
+    //     margin-left:-40vw;
+    font-size: min(15px, 4.5vw);
+  }
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input {
+    padding: 3%;
+    width: 100%;
+    font-size: medium;
+    border-radius: 8px;
+    border-width: 0;
+    background-color: #ffdddb;
+  }
+}

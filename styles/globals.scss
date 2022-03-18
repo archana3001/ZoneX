@@ -1,0 +1,238 @@
+@font-face {
+  src: url("../public/fonts/Blue\ Yellow.otf");
+  font-family: blue-yellow;
+}
+
+@font-face {
+  src: url("../public/fonts/Dead\ Revolution.otf");
+  font-family: dead-rev;
+}
+
+@font-face {
+  src: url("../public/fonts/Neon.ttf");
+  font-family: neon;
+}
+
+@font-face {
+  src: url("../public/fonts/Smooch-Regular.ttf");
+  font-family: smooch;
+}
+
+@font-face {
+  src: url("../public/fonts/Neothic.ttf");
+  font-family: neothic;
+}
+
+@font-face {
+  src: url("../public/fonts/Kathen\ Font\ by\ Situjuh\ \(7NTypes\).otf");
+  font-family: kathen;
+}
+
+@font-face {
+  src: url("../public/fonts/FEC_____.TTF");
+  font-family: highswift;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.algae {
+  background-color: #94efa2;
+  position: relative;
+  background-image: url("../public/space.png");
+  background-size: 100vw 100vw;
+  height: 100vh;
+}
+
+.div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-weight: bold; */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.f1 {
+  font-family: blue-yellow;
+  letter-spacing: 16px;
+  font-size: 100px;
+  font-weight: bolder;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  // -webkit-text-stroke-color: rgb(51, 13, 68);
+  // text-shadow: 4px 0 rgb(51, 13, 68);
+  -webkit-text-stroke-color: rgb(148, 255, 86);
+  text-shadow: 4px 0 rgb(148, 255, 86);
+}
+
+.f2 {
+  font-family: dead-rev;
+  letter-spacing: 4px;
+}
+
+.f3 {
+  font-family: smooch;
+  letter-spacing: 2px;
+}
+
+.f4 {
+  font-family: neothic;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.f5 {
+  font-family: kathen;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.f6 {
+  font-family: neon;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.f7 {
+  font-family: highswift;
+  letter-spacing: 4px;
+  font-style: italic;
+  overflow: visible;
+  padding-right: 8px;
+  // font-size: small;
+  // font-weight: 200;
+  // margin-right: 2px;
+}
+
+.sur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-weight: bold; */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../public/background/space1/bg1bb.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sth1 {
+  font-size: min(5.5vw, 65px);
+  background-color: #ddd;
+  padding: 8px 24px;
+  border-radius: 14px;
+}
+.div1:nth-child(1) {
+  // background-image: url("../public/background/space2/space2b.jpg");
+  // background-size: cover;
+  // background-position: center;
+}
+
+#gameBlock {
+  background-color: rgb(114, 157, 206);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+#mountain {
+  position: absolute;
+  bottom: 0px;
+  height: 40vh;
+  width: 100%;
+  z-index: 2;
+}
+
+#rocket {
+  position: absolute;
+  bottom: 205px;
+  left: 280px;
+  height: 70px;
+  width: 70px;
+  z-index: 1;
+}
+
+// #bg{
+//   height: 100%;
+//   width: 100%;
+// }
+
+.div1:nth-child(4) {
+  background-image: url("../public/background/space9/space9.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.door {
+  // background-image: url("../public/background/space8/space8a.jpg");
+  // background-attachment: fixed;
+  // background-size: cover;
+  // background-position: center;
+}
+
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+}
+
+.Head {
+  background-image: linear-gradient(
+    140deg,
+    rgba(4, 56, 91, 1) 0%,
+    rgba(211, 16, 228, 1) 81%,
+    rgba(255, 0, 124, 0.9659745065789473) 100%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+@media screen and (max-width: 600px) {
+  .h7 {
+    padding-right: -1px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sth1 {
+    font-size: 65px;
+  }
+
+  #mountain {
+    position: absolute;
+    bottom: 0px;
+    height: 55vh;
+    width: 100%;
+  }
+
+  .sth1:nth-child(2) {
+    margin-bottom: 00px;
+  }
+
+  #rocket {
+    position: absolute;
+    bottom: 50vh;
+    left: 50vw;
+    height: 90px;
+    width: 100px;
+  }
+}

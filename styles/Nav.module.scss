@@ -1,0 +1,35 @@
+.nav {
+  padding: 1vh 3vw;
+  width: 80vw;
+  display: flex;
+  position: absolute;
+  top: 1%;
+  justify-content: space-between;
+  // backgroundImage: "linear-gradient(145deg,#000020,#9333d4,#ae0074)",
+  background-color: #aaa3;
+  z-index: 100;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+
+  @media screen and (max-width: 550px) {
+    width: 100%;
+    top: 0;
+    border-radius: 0px;
+  }
+}
+
+.anc {
+  color: white;
+  text-decoration: none;
+  margin-left: 10%;
+  font-size: 25px;
+  font-weight: 500;
+  transform: translateX(-50%);
+
+  @media screen and (max-width: 550px) {
+    margin-left: 10%;
+       font-size: min(20px,5vw);
+    // font-size: 5vw;
+  }
+}

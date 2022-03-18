@@ -1,0 +1,43 @@
+$col1t: #f7fffc5e;
+.power {
+  background-image: linear-gradient(
+    140deg,
+    rgba(4, 56, 91, 1) 0%,
+    rgba(211, 16, 228, 1) 81%,
+    rgba(255, 0, 124, 0.9659745065789473) 100%
+  );
+  text-decoration: none;
+  padding: 3px 17px;
+  padding-top: 4px;
+  border-radius: 10px;
+  border-width: 0;
+  color: antiquewhite;
+  font-size: 0.9rem;
+  font-weight: 600;
+  max-height: 26px;
+  /* margin: 4.5vw; */
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 40vh;
+  width: 80vw;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: $col1t;
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@mixin inp {
+  padding: 2px 8px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: rgba(153, 9, 129, 0.8);
+}
